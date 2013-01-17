@@ -1,30 +1,30 @@
-<%- model_class = Order -%>
+<%- model_class = Index -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human %></h1>
 </div>
 
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
-  <dd><%= @order.name %></dd>
+  <dd><%= @index.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
-  <dd><%= @order.email %></dd>
+  <dd><%= @index.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:phonenumber) %>:</strong></dt>
-  <dd><%= @order.phonenumber %></dd>
+  <dd><%= @index.phonenumber %></dd>
   <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
-  <dd><%= @order.address %></dd>
+  <dd><%= @index.address %></dd>
   <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
-  <dd><%= @order.date %></dd>
+  <dd><%= @index.date %></dd>
   <dt><strong><%= model_class.human_attribute_name(:orderinfo) %>:</strong></dt>
-  <dd><%= @order.orderinfo %></dd>
+  <dd><%= @index.orderinfo %></dd>
 </dl>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              orders_path, :class => 'btn'  %>
+              index_path, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_order_path(@order), :class => 'btn' %>
+              edit_index_path(@index), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              order_path(@order),
+              index_path(@index),
               :method => 'delete',
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
