@@ -1,4 +1,10 @@
 Cupcakes::Application.routes.draw do
+  resources :orders
+
+
+  resources :teams
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
