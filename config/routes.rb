@@ -1,4 +1,7 @@
 Cupcakes::Application.routes.draw do
+  resources :posts
+
+
   resources :indices
 
 
