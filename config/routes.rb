@@ -2,13 +2,8 @@ Cupcakes::Application.routes.draw do
   resources :posts
 
 
-  resources :indices
-
-
   resources :orders
 
-
-  resources :teams
 
 
   # The priority is based upon order of creation:
