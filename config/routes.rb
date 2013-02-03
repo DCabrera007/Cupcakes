@@ -1,4 +1,7 @@
 Cupcakes::Application.routes.draw do
+  resources :orders
+
+
   resources :customers
 
 
@@ -9,7 +12,7 @@ Cupcakes::Application.routes.draw do
 
   resources :orders
 
- root :to => "customers#index"
+ root :to => 'customers#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
