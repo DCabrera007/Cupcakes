@@ -1,3 +1,3 @@
 class Order < ActiveRecord::Base
-  attr_accessible :address, :date, :email, :name, :orderinfo, :phonenumber
+  attr_accessible :Description, :DueBy, :Quantity
 end
