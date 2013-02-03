@@ -1,3 +1,3 @@
 class Review < ActiveRecord::Base
-  attr_accessible :Comments
+  attr_accessible :Description, :Title
 end
